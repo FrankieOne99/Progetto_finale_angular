@@ -11,6 +11,7 @@
   @for(corso of corsi() ?? []; track corso.id) {
   <!--Mostra la card del corso solo se l'ID del corso è minore o uguale a 4 -->
   @if (corso.id<=4) {
+  <!--Mostriamo il component "app-corso"-->
   <app-corso [corso]="corso"></app-corso>
   } }
 </div>

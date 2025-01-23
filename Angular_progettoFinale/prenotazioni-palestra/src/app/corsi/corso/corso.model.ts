@@ -1,3 +1,4 @@
+//Definisco l'interfaccia per il mio nuovo tipo "Corso"
 export interface Corso {
   id: number;
   nome: string;

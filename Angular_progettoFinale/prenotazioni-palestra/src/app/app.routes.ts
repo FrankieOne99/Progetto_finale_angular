@@ -5,6 +5,7 @@ import { CorsiComponent } from './corsi/corsi.component';
 import { CorsoComponent } from './corsi/corso/corso.component';
 import { AmministrazioneComponent } from './amministrazione/amministrazione.component';
 
+//Definisco le routes delle varie pagine
 export const routes: Routes = [
   { path: '', component: HomeComponent },
 
