@@ -1,0 +1,47 @@
+.card {
+  /* Imposto la larghezza della card */
+  width: 300px;
+  /* Imposto il colore di sfondo della card */
+  background: #f0f0f0;
+  /* Applico il border-radius, in modo da rendere rotondo gli angoli della card*/
+  border-radius: 8px;
+  /* Nascondo eventuali elementi che escono dai bordi della card */
+  overflow: hidden;
+  /* Aggiungo un'ombra leggera alla card */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  /* Aggiungo margine attorno alla card */
+  margin: 20px;
+  /* Aggiungo un bordo nero alla card */
+  border: 3px solid black;
+  /* Applico una transizione per l'effetto hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effetto hover */
+.card:hover {
+  /* Solleva leggermente la card quando il mouse ci passa sopra */
+  transform: translateY(-10px);
+  /* Aumenta l'ombra della card quando il mouse ci passa sopra */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  /* Imposto la larghezza dell'immagine al 100% della card */
+  width: 100%;
+  /* serve per mantenere costanti le proporzioni della card */
+  height: auto;
+}
+
+.card-content {
+  /* Aggiungo padding interno alla sezione dei contenuti */
+  padding: 16px;
+}
+
+.card-content h2 {
+  /* Imposto la dimensione del font del titolo */
+  font-size: 28px;
+  /* Aggiungo un margine inferiore al titolo */
+  margin-bottom: 8px;
+  /* Applico lo stile "oblique" al titolo */
+  font-style: oblique;
+}

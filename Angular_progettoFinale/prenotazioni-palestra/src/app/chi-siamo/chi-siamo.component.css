@@ -1,0 +1,34 @@
+.container {
+  /* Aggiungo un margine superiore e inferiore al contenitore */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* Utilizzo il layout grid per organizzare gli elementi */
+  display: grid;
+  /* Definisco due colonne di larghezza uguale */
+  grid-template-columns: repeat(2, 1fr);
+  /* Aggiungo uno spazio tra gli elementi */
+  gap: 20px;
+}
+
+img {
+  /* Imposta la larghezza dell'immagine al 100% del contenitore */
+  width: 100%;
+  /* Mantiengo le proporzioni dell'immagine */
+  height: auto;
+  /* Aggiungo un bordo nero all'immagine */
+  border: 2px solid black;
+}
+
+/* MEDIA QUERY */
+
+@media (max-width: 992px) {
+  /* Modifica il layout per schermi con larghezza massima di 992px */
+  .container {
+    /* Definisce una singola colonna */
+    grid-template-columns: 1fr;
+  }
+  img {
+    /* Cambia l'ordine di visualizzazione dell'immagine */
+    order: 2;
+  }
+}

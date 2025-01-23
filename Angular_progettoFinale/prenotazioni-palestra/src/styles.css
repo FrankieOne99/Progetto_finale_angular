@@ -1,0 +1,62 @@
+/* STILI GLOBALI */
+* {
+  /*Reimposto il margin e il padding predefiniti per tutti gli elementi a 0*/
+  margin: 0px;
+  padding: 0px;
+  /*Applico il modello di dimensionamento "border-box" per una gestione più coerente delle dimensioni */
+  box-sizing: border-box;
+  /* Imposta un font sans-serif come font predefinito per tutti gli elementi */
+  font-family: sans-serif;
+}
+
+/*Utilizzo delle costum properties per i colori del sito*/
+
+:root {
+  --color-bg: #fefae0; /*Colore di background*/
+  --color-titles: #bc6c25; /*Colore dei titoli*/
+  --color-p: #283618; /*colore dei paragrafi*/
+}
+
+body {
+  /* Imposta il colore di sfondo del sito */
+  background-color: var(--color-bg);
+}
+
+h1,
+h2 {
+  /* Centro il testo degli elementi h1 e h2 */
+  text-align: center;
+  /* Specifico una famiglia di font preferita per gli elementi h1 e h2 */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /* Imposto il colore del testo degli elementi h1 e h2 */
+  color: var(--color-titles);
+  /* Imposto il font-weight degli elementi h1 e h2 a "bold" */
+  font-weight: bold;
+  /* Aggiungo un margine superiore di 10 pixel agli elementi h1 e h2 */
+  margin-top: 10px;
+}
+
+p {
+  /* Specifico una famiglia di font preferita per i paragrafi */
+  font-family: "Arial", sans-serif;
+  /* Imposta la dimensione del font dei a 16 pixel */
+  font-size: 16px;
+  /* Imposto l'interlinea dei paragrafi per una migliore leggibilità */
+  line-height: 2;
+  /* Imposto il colore del testo dei paragrafi */
+  color: var(--color-p);
+}
+
+.card-container {
+  /* Utilizzo flex per facilitare il layout e l'allineamento degli elementi */
+  display: flex;
+  /* Dispongo gli elementi figli in orizzontale */
+  flex-direction: row;
+  /* Centro gli elementi figli orizzontalmente all'interno del contenitore */
+  justify-content: center;
+  /* Consente agli elementi di passare alla riga successiva quando necessario, utile per la versione responsive del sito */
+  flex-wrap: wrap;
+  /* Aggiunge un margine superiore di 30 pixel al contenitore */
+  margin-top: 30px;
+}

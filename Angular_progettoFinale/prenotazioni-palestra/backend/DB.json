@@ -1,0 +1,76 @@
+{
+  "corsi": [
+    {
+      "id": 1,
+      "nome": "Yoga",
+      "descrizione": "Lezione di yoga per migliorare flessibilità, equilibrio e concentrazione.",
+      "image": "http://localhost:3000/images/yoga.jpg",
+      "istruttore": "Anna Rossi",
+      "durata": 60,
+      "capacita_massima": 20
+    },
+    {
+      "id": 2,
+      "nome": "Pilates",
+      "descrizione": "Allenamento che mira a tonificare il corpo combinando forza e agilità.",
+      "istruttore": "Marco Bianchi",
+      "image": "http://localhost:3000/images/pilates.jpg",
+      "durata": 45,
+      "capacita_massima": 15
+    },
+    {
+      "id": 3,
+      "nome": "Spinning",
+      "descrizione": "Lezione dinamica di ciclismo indoor per migliorare la resistenza e la forza.",
+      "image": "http://localhost:3000/images/spinning.jpg",
+      "istruttore": "Luca Verdi",
+      "durata": 45,
+      "capacita_massima": 25
+    },
+    {
+      "id": 4,
+      "nome": "Zumba",
+      "descrizione": " Nuovo corso di danza fitness ideato per bruciare calorie e divertirsi.",
+      "istruttore": "Francesca Gialli",
+      "image": "http://localhost:3000/images/zumba.jpg",
+      "durata": 90,
+      "capacita_massima": 30
+    },
+    {
+      "id": 5,
+      "nome": "Body Pump",
+      "descrizione": "Allenamento coi pesi volto a tonificare e aumentare la massa muscolare.",
+      "istruttore": "Stefano Neri",
+      "image": "http://localhost:3000/images/body_pump.jpg",
+      "durata": 60,
+      "capacita_massima": 20
+    },
+    {
+      "id": 6,
+      "nome": "CrossFit",
+      "descrizione": "Allenamento che combina sollevamento pesi e ginnastica per migliorare la fisicità.",
+      "istruttore": "Alessandro Verdi",
+      "image": "http://localhost:3000/images/crossfit.jpg",
+      "durata": 60,
+      "capacita_massima": 18
+    },
+    {
+      "id": 7,
+      "nome": "TRX",
+      "descrizione": "Allenamento con l'uso di sospensioni per sviluppare forza e stabilità attraverso il peso corporeo.",
+      "istruttore": "Claudia Giordano",
+      "image": "http://localhost:3000/images/trx.jpg",
+      "durata": 45,
+      "capacita_massima": 20
+    },
+    {
+      "id": 8,
+      "nome": "Kickboxing",
+      "descrizione": "Corso di combattimento volto al miglioramento la resistenza cardiovascolare e tonificare il corpo.",
+      "istruttore": "Riccardo Esposito",
+      "image": "http://localhost:3000/images/kickboxing.jpg",
+      "durata": 60,
+      "capacita_massima": 45
+    }
+  ]
+}

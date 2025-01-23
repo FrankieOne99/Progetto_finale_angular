@@ -1,0 +1,17 @@
+<h1>Benvenuti su AngFitness</h1>
+<h2>Ecco alcuni dei nostri corsi</h2>
+
+@if(isFetching()){
+<!--Se il caricamento degli utenti è in corso, mostra un messaggio di attesa -->
+<div>Caricamento utenti in corso....</div>
+} @else {
+<!--Altrimenti, se il caricamento è completato, mostra i corsi -->
+<div class="card-container">
+  <!-- Iteriamo sull'array "corsi"-->
+  @for(corso of corsi() ?? []; track corso.id) {
+  <!--Mostra la card del corso solo se l'ID del corso è minore o uguale a 4 -->
+  @if (corso.id<=4) {
+  <app-corso [corso]="corso"></app-corso>
+  } }
+</div>
+}
