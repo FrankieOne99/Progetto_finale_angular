@@ -14,7 +14,6 @@ export const routes: Routes = [
   {
     path: 'nostri-corsi',
     component: CorsiComponent,
-    children: [{ path: 'corso', component: CorsoComponent }],
   },
   { path: 'amministrazione', component: AmministrazioneComponent },
 ];

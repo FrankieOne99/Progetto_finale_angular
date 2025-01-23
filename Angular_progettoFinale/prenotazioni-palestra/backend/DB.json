@@ -72,5 +72,25 @@
       "durata": 60,
       "capacita_massima": 45
     }
+  ],
+  "corsiPrenotati": [
+    {
+      "id": 10,
+      "nome": "CrossFit",
+      "descrizione": "Allenamento che combina sollevamento pesi e ginnastica per migliorare la fisicità.",
+      "istruttore": "Alessandro Verdi",
+      "image": "http://localhost:3000/images/crossfit.jpg",
+      "durata": 60,
+      "capacita_massima": 18
+    },
+    {
+      "id": 10,
+      "nome": "CrossFit",
+      "descrizione": "Allenamento che combina sollevamento pesi e ginnastica per migliorare la fisicità.",
+      "istruttore": "Alessandro Verdi",
+      "image": "http://localhost:3000/images/crossfit.jpg",
+      "durata": 60,
+      "capacita_massima": 18
+    }
   ]
 }

@@ -16,11 +16,11 @@ export class CorsiComponent implements OnInit {
 
   //per poter utilizzare i metodi dell'httpClient lo devo iniettare qui nella classe e dichiarare nel main (appConfig)
   private destroyRef = inject(DestroyRef);
-  private usersService = inject(CorsiService);
+  private corsiService = inject(CorsiService);
 
-  //Voglio caricare gli utenti nel momento in cui accedo alla pagina utilizzando ngOnInit (implementare l'interfaccia OnInit). ATT: il metodo ngOnInit viene chiamato un attimo dopo il costruttore. L'ngOnInit viene chiamato appena renderizzo il component
+  //Voglio caricare gli utenti nel momento in cui accedo alla pagina utilizzando ngOnInit
   ngOnInit() {
-    const subscription = this.usersService.loadCorsi().subscribe({
+    const subscription = this.corsiService.loadCorsi().subscribe({
       next: (resData) => {
         this.corsi.set(resData);
       },

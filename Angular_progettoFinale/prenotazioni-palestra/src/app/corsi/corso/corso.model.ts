@@ -5,6 +5,6 @@ export interface Corso {
   image: string;
   descrizione: string;
   istruttore: string;
-  durata: 60;
-  capacita_massima: 20;
+  durata: number;
+  capacita_massima: number;
 }

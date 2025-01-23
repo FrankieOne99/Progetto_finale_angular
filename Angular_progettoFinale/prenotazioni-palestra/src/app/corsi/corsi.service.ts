@@ -29,4 +29,22 @@ export class CorsiService {
       'Qualcosa è andato storto'
     );
   }
+
+  loadCorsiPrenotati() {
+    return this.fetchCorsi(
+      'http://localhost:3000/corsiPrenotati',
+      'Qualcosa è andato storto'
+    );
+  }
+
+  addCorso(nuovoCorso: Corso) {
+    return this.httpClient
+      .post<Corso>('http://localhost:3000/corsiPrenotati', nuovoCorso)
+      .pipe(
+        catchError((error) => {
+          console.log(error);
+          return throwError(() => new Error("Errore nell'aggiungere il corso"));
+        })
+      );
+  }
 }
