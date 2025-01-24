@@ -23,7 +23,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   /* Centro il testo degli elementi h1 e h2 */
   text-align: center;
   /* Specifico una famiglia di font preferita per gli elementi h1 e h2 */

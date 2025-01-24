@@ -1,4 +1,12 @@
-<h3>{{ corso().nome }}</h3>
-<button class="btn btn-danger" (click)="onClick()">
-  Cancella prenotazione
-</button>
+<div class="container">
+  <div class="card shadow-sm" style="max-width: 400px; width: 100%">
+    <div class="card-body text-center">
+      <!-- Titolo del corso -->
+      <h5 class="card-title mb-3">{{ corso().nome }}</h5>
+      <!-- Bottone per cancellare la prenotazione -->
+      <button class="btn btn-danger btn-sm" (click)="onClick()">
+        <i class="bi bi-trash"></i> Cancella Prenotazione
+      </button>
+    </div>
+  </div>
+</div>
