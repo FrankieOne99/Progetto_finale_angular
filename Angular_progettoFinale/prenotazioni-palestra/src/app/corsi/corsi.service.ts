@@ -50,8 +50,8 @@ export class CorsiService {
       );
   }
   //Creo e definisco deletePrenotazione per eliminare la prenotazione dal DB
-  deletePrenotazione(user: Corso) {
-    const url = `http://localhost:3000/corsiPrenotati/${user.id}`;
+  deletePrenotazione(corso: Corso) {
+    const url = `http://localhost:3000/corsiPrenotati/${corso.id}`;
     return this.httpClient.delete<Corso>(url).pipe(
       tap({
         next: (response) => {

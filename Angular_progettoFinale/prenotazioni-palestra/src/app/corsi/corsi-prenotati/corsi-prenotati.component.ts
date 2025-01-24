@@ -16,6 +16,7 @@ export class CorsiPrenotatiComponent {
   private corsiService = inject(CorsiService);
 
   isFetching = signal(false);
+  //Con la funzione onClick() posso andare ad eliminare i dati dal db
   onClick() {
     const subscription = this.corsiService
       .deletePrenotazione(this.corso())

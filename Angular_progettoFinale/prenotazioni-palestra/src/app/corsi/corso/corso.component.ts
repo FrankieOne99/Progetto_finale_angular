@@ -11,11 +11,12 @@ import { CorsiService } from '../corsi.service';
 })
 export class CorsoComponent {
   corso = input.required<Corso>();
-  //dichiaro i metodi dell'http
+
   private destroyRef = inject(DestroyRef);
   private corsiService = inject(CorsiService);
   isFetching = signal(false);
 
+  //La funzione onClick() mi permette di aggiunger al DB la mia prenotazione
   onClick() {
     const subscription = this.corsiService
       .addPrenotazione(this.corso())

@@ -1,8 +1,10 @@
 <h2>Pagina personale</h2>
 <h3>Le tue prenotazioni</h3>
 <ul>
+  <!-- Iteriamo sull'array "corsi"-->
   @for (corso of corsi(); track $index) {
   <li>
+    <!--Mostriamo il component "app-corsi-prenotati"-->
     <app-corsi-prenotati [corso]="corso"></app-corsi-prenotati>
   </li>
   }

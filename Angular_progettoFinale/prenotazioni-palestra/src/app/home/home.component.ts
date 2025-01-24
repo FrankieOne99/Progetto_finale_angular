@@ -15,12 +15,11 @@ export class HomeComponent implements OnInit {
 
   isFetching = signal(false);
 
-  //per poter utilizzare i metodi dell'httpClient devo prima dichiararli
   private destroyRef = inject(DestroyRef);
   private corsiService = inject(CorsiService);
 
-  //Voglio caricare gli utenti nel momento in cui accedo alla pagina utilizzando ngOnInit
-  ngOnInit(): void {
+  //Voglio caricare i corsi nel momento in cui accedo alla pagina utilizzando ngOnInit
+  ngOnInit() {
     let subscription = this.corsiService.loadCorsi().subscribe({
       next: (resData) => {
         this.corsi.set(resData);

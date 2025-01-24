@@ -14,11 +14,10 @@ export class AmministrazioneComponent implements OnInit {
   corsi = signal<Corso[] | undefined>(undefined);
   isFetching = signal(false);
 
-  //per poter utilizzare i metodi dell'httpClient lo devo iniettare qui nella classe e dichiarare nel main (appConfig)
   private destroyRef = inject(DestroyRef);
   private corsiService = inject(CorsiService);
 
-  //Voglio caricare gli utenti nel momento in cui accedo alla pagina utilizzando ngOnInit
+  //Voglio caricare i corsi nel momento in cui accedo alla pagina utilizzando ngOnInit
   ngOnInit() {
     const subscription = this.corsiService.loadCorsiPrenotati().subscribe({
       next: (resData) => {
