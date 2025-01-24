@@ -44,4 +44,11 @@ E' presente un solo services chiamato "corsi.services.ts" che consente la connes
 
 ## Implentazioni
 
+-Sono state create tutte le pagine richieste
+-il routing funziona correttamente
+-Nella pagina corsi e home sono visibili i corsi dal db
+-E' possbile aggiornare il db, aggiungendo e togliendo la prenotazione a un corso
+
 ## Mancanze
+
+-Prensenza dei form e della validazione dei dati
