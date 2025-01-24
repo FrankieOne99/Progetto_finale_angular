@@ -1,27 +1,47 @@
 # PrenotazioniPalestra
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.12.
+## Strumenti utilizzati
 
-## Development server
+nodejs, Angular, json-server, bootstrap
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Componenti
 
-## Code scaffolding
+### Navbar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Barra di navigazione che consente di sposarsi tra le varie pagine del sito
 
-## Build
+### Home
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Pagina principale del sito vengono mostrati i primi 4 corsi presenti nel db
 
-## Running unit tests
+### Chi Siamo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Semplice esempio di pagina "chi siamo"
 
-## Running end-to-end tests
+### Corsi
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Pagina che mostra tutti i corsi presenti nel db sottoforma di card (realizzate in css)
 
-## Further help
+### Corso
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Component che definisce il tipo "Corso" e che rappresenta la logica e la UI dei singoli corsi
+
+### Corsi-prenotati
+
+Component simile a Corso che però rapprenseta la logica e la Ui dei Corsi che l'utente prenota
+
+### Amministrazione
+
+Pagina che mostra le prenotazioni effetuate dall'utente
+
+## Routing
+
+Tramite il routing Outlet è possibile il rendering delle componenti associate a una determinata rotta definite nell'app-routes.ts
+
+## Services
+
+E' presente un solo services chiamato "corsi.services.ts" che consente la connessione al db e di utilizzare i metodi dell'httpClient
+
+## Implentazioni
+
+## Mancanze
