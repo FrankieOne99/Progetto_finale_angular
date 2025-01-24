@@ -16,7 +16,7 @@ Pagina principale del sito vengono mostrati i primi 4 corsi presenti nel db
 
 ### Chi Siamo
 
-Semplice esempio di pagina "chi siamo"
+Semplice esempio di pagina "chi siamo".
 
 ### Corsi
 
@@ -40,15 +40,16 @@ Tramite il routing Outlet è possibile il rendering delle componenti associate a
 
 ## Services
 
-E' presente un solo services chiamato "corsi.services.ts" che consente la connessione al db e di utilizzare i metodi dell'httpClient
+E' presente un solo service chiamato "corsi.services.ts" che consente la connessione al db e di utilizzare i metodi dell'httpClient
 
 ## Implentazioni
 
--Sono state create tutte le pagine richieste
--il routing funziona correttamente
--Nella pagina corsi e home sono visibili i corsi dal db
--E' possbile aggiornare il db, aggiungendo e togliendo la prenotazione a un corso
+- Creazione di tutte le pagine richieste
+- Uso delle classi di Bootstrap per una migliore UI
+- Routing perfettamente funzionante
+- Nella pagina "corsi" e "home" sono visibili i corsi dal db
+- E' possbile aggiornare il db, aggiungendo e togliendo la prenotazione a un corso
 
 ## Mancanze
 
--Prensenza dei form e della validazione dei dati
+- Presenza dei form e della validazione dei dati
