@@ -17,22 +17,13 @@ export class CorsoComponent {
   isFetching = signal(false);
 
   onClick() {
-    const nuovoCorso = {
-      id: 10,
-      nome: 'CrossFit',
-      descrizione:
-        'Allenamento che combina sollevamento pesi e ginnastica per migliorare la fisicità.',
-      istruttore: 'Alessandro Verdi',
-      image: 'http://localhost:3000/images/crossfit.jpg',
-      durata: 60,
-      capacita_massima: 18,
-    };
-
-    const subscription = this.corsiService.addCorso(nuovoCorso).subscribe({
-      complete: () => {
-        this.isFetching.set(false);
-      },
-    });
+    const subscription = this.corsiService
+      .addPrenotazione(this.corso())
+      .subscribe({
+        complete: () => {
+          this.isFetching.set(false);
+        },
+      });
 
     this.destroyRef.onDestroy(() => {
       subscription.unsubscribe();

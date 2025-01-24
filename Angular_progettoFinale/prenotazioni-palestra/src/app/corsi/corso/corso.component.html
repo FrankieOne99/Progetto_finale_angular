@@ -6,10 +6,8 @@
     <p>Istruttore: {{ corso().istruttore }}</p>
     <p>Durata: {{ corso().durata }} minuti</p>
     <p>Posti disponibili: {{ corso().capacita_massima }}</p>
-    <a href="" class="btn btn-primary" (click)="onClick()"
-      >Prenota una lezione</a
-    >
+    <button class="btn btn-primary" (click)="onClick()">
+      Prenota una lezione
+    </button>
   </div>
-
-  <!-- <button (click)="onSelectUser(utente())">Preferito</button> -->
 </div>

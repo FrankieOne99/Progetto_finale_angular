@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Corso } from './corso/corso.model';
-import { catchError, throwError } from 'rxjs';
+import { catchError, tap, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -30,21 +30,37 @@ export class CorsiService {
     );
   }
 
+  //Creo e definisco loadCorsiPrenotati per caricare tutti i corsi prenotati dall'API
+
   loadCorsiPrenotati() {
     return this.fetchCorsi(
       'http://localhost:3000/corsiPrenotati',
       'Qualcosa è andato storto'
     );
   }
-
-  addCorso(nuovoCorso: Corso) {
+  //Creo e definisco loadCorsiPrenotati per aggiungere una nuova prenotazione
+  addPrenotazione(corso: Corso) {
     return this.httpClient
-      .post<Corso>('http://localhost:3000/corsiPrenotati', nuovoCorso)
+      .post<Corso>('http://localhost:3000/corsiPrenotati', corso)
       .pipe(
         catchError((error) => {
           console.log(error);
           return throwError(() => new Error("Errore nell'aggiungere il corso"));
         })
       );
+  }
+  //Creo e definisco deletePrenotazione per eliminare la prenotazione dal DB
+  deletePrenotazione(user: Corso) {
+    const url = `http://localhost:3000/corsiPrenotati/${user.id}`;
+    return this.httpClient.delete<Corso>(url).pipe(
+      tap({
+        next: (response) => {
+          console.log('Prenotazione eliminata:', response);
+        },
+        error: (error) => {
+          console.error("Errore durante l'eliminazione:", error);
+        },
+      })
+    );
   }
 }

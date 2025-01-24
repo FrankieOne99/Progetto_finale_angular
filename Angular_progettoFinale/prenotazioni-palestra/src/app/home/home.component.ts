@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
   private corsiService = inject(CorsiService);
 
   //Voglio caricare gli utenti nel momento in cui accedo alla pagina utilizzando ngOnInit
-  ngOnInit() {
+  ngOnInit(): void {
     let subscription = this.corsiService.loadCorsi().subscribe({
       next: (resData) => {
         this.corsi.set(resData);

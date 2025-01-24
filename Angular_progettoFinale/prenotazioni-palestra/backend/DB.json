@@ -1,7 +1,7 @@
 {
   "corsi": [
     {
-      "id": 1,
+      "id": "1",
       "nome": "Yoga",
       "descrizione": "Lezione di yoga per migliorare la flessibilità, l'equilibrio e la concentrazione.",
       "image": "http://localhost:3000/images/yoga.jpg",
@@ -10,7 +10,7 @@
       "capacita_massima": 20
     },
     {
-      "id": 2,
+      "id": "2",
       "nome": "Pilates",
       "descrizione": "Allenamento il cui obiettivo è quello di tonificare il corpo combinando forza e agilità.",
       "istruttore": "Marco Bianchi",
@@ -19,7 +19,7 @@
       "capacita_massima": 15
     },
     {
-      "id": 3,
+      "id": "3",
       "nome": "Spinning",
       "descrizione": "Lezione dinamica di ciclismo indoor per migliorare la resistenza e la forza.",
       "image": "http://localhost:3000/images/spinning.jpg",
@@ -28,7 +28,7 @@
       "capacita_massima": 25
     },
     {
-      "id": 4,
+      "id": "4",
       "nome": "Zumba",
       "descrizione": "Nuovo corso di danza fitness ideato per bruciare calorie e divertirsi tutti insieme",
       "istruttore": "Francesca Gialli",
@@ -37,7 +37,7 @@
       "capacita_massima": 30
     },
     {
-      "id": 5,
+      "id": "5",
       "nome": "Body Pump",
       "descrizione": "Allenamento coi pesi volto a tonificare e aumentare la massa muscolare.",
       "istruttore": "Stefano Neri",
@@ -46,7 +46,7 @@
       "capacita_massima": 20
     },
     {
-      "id": 6,
+      "id": "6",
       "nome": "CrossFit",
       "descrizione": "Allenamento che combina sollevamento pesi e ginnastica per migliorare la fisicità.",
       "istruttore": "Alessandro Verdi",
@@ -55,7 +55,7 @@
       "capacita_massima": 18
     },
     {
-      "id": 7,
+      "id": "7",
       "nome": "TRX",
       "descrizione": "Allenamento con l'uso di sospensioni per sviluppare forza e stabilità attraverso il peso corporeo.",
       "istruttore": "Claudia Giordano",
@@ -64,7 +64,7 @@
       "capacita_massima": 20
     },
     {
-      "id": 8,
+      "id": "8",
       "nome": "Kickboxing",
       "descrizione": "Corso di combattimento volto al miglioramento la resistenza cardiovascolare e tonificare il corpo.",
       "istruttore": "Riccardo Esposito",
@@ -73,24 +73,5 @@
       "capacita_massima": 45
     }
   ],
-  "corsiPrenotati": [
-    {
-      "id": 10,
-      "nome": "CrossFit",
-      "descrizione": "Allenamento che combina sollevamento pesi e ginnastica per migliorare la fisicità.",
-      "istruttore": "Alessandro Verdi",
-      "image": "http://localhost:3000/images/crossfit.jpg",
-      "durata": 60,
-      "capacita_massima": 18
-    },
-    {
-      "id": 10,
-      "nome": "CrossFit",
-      "descrizione": "Allenamento che combina sollevamento pesi e ginnastica per migliorare la fisicità.",
-      "istruttore": "Alessandro Verdi",
-      "image": "http://localhost:3000/images/crossfit.jpg",
-      "durata": 60,
-      "capacita_massima": 18
-    }
-  ]
+  "corsiPrenotati": []
 }
